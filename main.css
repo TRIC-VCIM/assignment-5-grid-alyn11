@@ -1,0 +1,43 @@
+@charset "UTF-8";
+/* CSS Document */
+/* COLORS
+#CE8D66-Raw Siena
+#F0DDD1-Champange Pink
+#6E9075-Russian Green */
+.site{
+  display: grid;
+  grid-column-template: [full-start] minmax(1em, 1fr) 
+    [main-start] minmax(0, 56em) [main-end]
+    minmax(1em, 1fr) [full-end];
+  grid-gap: 1em;
+
+}
+main{
+  background-color:#F0DDD1;
+  color:white;
+  grid-column: 1/3;
+  grid-row: 1/2;
+}
+.quotes{
+  background-color:#6E9075;
+  color:white;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+.albums {
+  background-color:#CE8D66;
+  color:white;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.image{
+  max-width:100%;
+  grid-column:1/3;
+  grid-row:3/4;
+}
+.footer{
+  background-color:#F0DDD1;
+  grid-column:1/4;
+  grid-row:4/5;
+  text-align:center;
+}
